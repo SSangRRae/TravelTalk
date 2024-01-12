@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sUx-Ho-3Hc">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat Room View Controller-->
+        <scene sceneID="o4H-fC-R3s">
+            <objects>
+                <viewController storyboardIdentifier="ChatRoomViewController" id="sUx-Ho-3Hc" customClass="ChatRoomViewController" customModule="TravelTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7xb-ys-gmY">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="C2y-ZT-qpy">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="VcV-hG-Zwm">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="72"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Ajv-4J-10X">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="sUx-Ho-3Hc" id="Yck-4l-VEX"/>
+                                            </connections>
+                                        </searchBar>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="Ajv-4J-10X" secondAttribute="trailing" id="BAI-22-5Do"/>
+                                        <constraint firstItem="Ajv-4J-10X" firstAttribute="top" secondItem="VcV-hG-Zwm" secondAttribute="top" id="JOy-sC-176"/>
+                                        <constraint firstItem="Ajv-4J-10X" firstAttribute="leading" secondItem="VcV-hG-Zwm" secondAttribute="leading" id="f3A-Ma-7NX"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4DY-gd-d2z"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="C2y-ZT-qpy" firstAttribute="leading" secondItem="4DY-gd-d2z" secondAttribute="leading" id="Eb7-pz-jCa"/>
+                            <constraint firstItem="C2y-ZT-qpy" firstAttribute="top" secondItem="4DY-gd-d2z" secondAttribute="top" id="Pp6-AT-ngh"/>
+                            <constraint firstItem="4DY-gd-d2z" firstAttribute="trailing" secondItem="C2y-ZT-qpy" secondAttribute="trailing" id="WFW-va-mR5"/>
+                            <constraint firstItem="4DY-gd-d2z" firstAttribute="bottom" secondItem="C2y-ZT-qpy" secondAttribute="bottom" id="gYj-Q8-Bbo"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ue7-sq-sfR"/>
+                    <connections>
+                        <outlet property="searchBar" destination="Ajv-4J-10X" id="jz8-t2-Inl"/>
+                        <outlet property="tableView" destination="C2y-ZT-qpy" id="exP-Bk-SFf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EXK-rD-2gT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="773.28244274809163" y="-33.098591549295776"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

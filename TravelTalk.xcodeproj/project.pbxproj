@@ -13,6 +13,11 @@
 		EC27571B2B5130650078C1AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2757192B5130650078C1AA /* Main.storyboard */; };
 		EC27571D2B5130660078C1AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC27571C2B5130660078C1AA /* Assets.xcassets */; };
 		EC2757202B5130660078C1AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC27571E2B5130660078C1AA /* LaunchScreen.storyboard */; };
+		EC2757282B51312B0078C1AA /* ChattingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2757272B51312B0078C1AA /* ChattingData.swift */; };
+		EC27572B2B5132150078C1AA /* ChatRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27572A2B5132150078C1AA /* ChatRoomViewController.swift */; };
+		EC27572E2B5132F30078C1AA /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27572C2B5132F30078C1AA /* ChatRoomTableViewCell.swift */; };
+		EC27572F2B5132F30078C1AA /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */; };
+		EC2757312B5139770078C1AA /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2757302B5139770078C1AA /* ChatRoom.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		EC27571C2B5130660078C1AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC27571F2B5130660078C1AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC2757212B5130660078C1AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC2757272B51312B0078C1AA /* ChattingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChattingData.swift; sourceTree = "<group>"; };
+		EC27572A2B5132150078C1AA /* ChatRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomViewController.swift; sourceTree = "<group>"; };
+		EC27572C2B5132F30078C1AA /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
+		EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
+		EC2757302B5139770078C1AA /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,28 @@
 		EC2757122B5130650078C1AA /* TravelTalk */ = {
 			isa = PBXGroup;
 			children = (
+				EC2757292B5131D40078C1AA /* Main */,
 				EC2757132B5130650078C1AA /* AppDelegate.swift */,
 				EC2757152B5130650078C1AA /* SceneDelegate.swift */,
-				EC2757172B5130650078C1AA /* ViewController.swift */,
 				EC2757192B5130650078C1AA /* Main.storyboard */,
+				EC2757172B5130650078C1AA /* ViewController.swift */,
 				EC27571C2B5130660078C1AA /* Assets.xcassets */,
 				EC27571E2B5130660078C1AA /* LaunchScreen.storyboard */,
 				EC2757212B5130660078C1AA /* Info.plist */,
 			);
 			path = TravelTalk;
+			sourceTree = "<group>";
+		};
+		EC2757292B5131D40078C1AA /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EC2757272B51312B0078C1AA /* ChattingData.swift */,
+				EC27572A2B5132150078C1AA /* ChatRoomViewController.swift */,
+				EC27572C2B5132F30078C1AA /* ChatRoomTableViewCell.swift */,
+				EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */,
+				EC2757302B5139770078C1AA /* ChatRoom.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +149,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2757202B5130660078C1AA /* LaunchScreen.storyboard in Resources */,
+				EC2757312B5139770078C1AA /* ChatRoom.storyboard in Resources */,
 				EC27571D2B5130660078C1AA /* Assets.xcassets in Resources */,
+				EC27572F2B5132F30078C1AA /* ChatRoomTableViewCell.xib in Resources */,
 				EC27571B2B5130650078C1AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2757182B5130650078C1AA /* ViewController.swift in Sources */,
+				EC2757282B51312B0078C1AA /* ChattingData.swift in Sources */,
 				EC2757142B5130650078C1AA /* AppDelegate.swift in Sources */,
 				EC2757162B5130650078C1AA /* SceneDelegate.swift in Sources */,
+				EC27572E2B5132F30078C1AA /* ChatRoomTableViewCell.swift in Sources */,
+				EC27572B2B5132150078C1AA /* ChatRoomViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +325,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssrr.TravelTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +355,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +364,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ssrr.TravelTalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
