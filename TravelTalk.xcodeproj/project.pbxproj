@@ -18,6 +18,12 @@
 		EC27572E2B5132F30078C1AA /* ChatRoomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27572C2B5132F30078C1AA /* ChatRoomTableViewCell.swift */; };
 		EC27572F2B5132F30078C1AA /* ChatRoomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */; };
 		EC2757312B5139770078C1AA /* ChatRoom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2757302B5139770078C1AA /* ChatRoom.storyboard */; };
+		EC2757352B529F8C0078C1AA /* Chat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC2757342B529F8C0078C1AA /* Chat.storyboard */; };
+		EC2757372B52A06A0078C1AA /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2757362B52A06A0078C1AA /* ChatViewController.swift */; };
+		EC27573A2B52A0C30078C1AA /* OtherTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC2757382B52A0C30078C1AA /* OtherTableViewCell.swift */; };
+		EC27573B2B52A0C30078C1AA /* OtherTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC2757392B52A0C30078C1AA /* OtherTableViewCell.xib */; };
+		EC27573E2B52A5C90078C1AA /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC27573C2B52A5C90078C1AA /* UserTableViewCell.swift */; };
+		EC27573F2B52A5C90078C1AA /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC27573D2B52A5C90078C1AA /* UserTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +40,12 @@
 		EC27572C2B5132F30078C1AA /* ChatRoomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTableViewCell.swift; sourceTree = "<group>"; };
 		EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomTableViewCell.xib; sourceTree = "<group>"; };
 		EC2757302B5139770078C1AA /* ChatRoom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChatRoom.storyboard; sourceTree = "<group>"; };
+		EC2757342B529F8C0078C1AA /* Chat.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chat.storyboard; sourceTree = "<group>"; };
+		EC2757362B52A06A0078C1AA /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		EC2757382B52A0C30078C1AA /* OtherTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewCell.swift; sourceTree = "<group>"; };
+		EC2757392B52A0C30078C1AA /* OtherTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherTableViewCell.xib; sourceTree = "<group>"; };
+		EC27573C2B52A5C90078C1AA /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		EC27573D2B52A5C90078C1AA /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +78,8 @@
 		EC2757122B5130650078C1AA /* TravelTalk */ = {
 			isa = PBXGroup;
 			children = (
-				EC2757292B5131D40078C1AA /* Main */,
+				EC2757322B529F5E0078C1AA /* Chat */,
+				EC2757292B5131D40078C1AA /* Room */,
 				EC2757132B5130650078C1AA /* AppDelegate.swift */,
 				EC2757152B5130650078C1AA /* SceneDelegate.swift */,
 				EC2757192B5130650078C1AA /* Main.storyboard */,
@@ -78,7 +91,7 @@
 			path = TravelTalk;
 			sourceTree = "<group>";
 		};
-		EC2757292B5131D40078C1AA /* Main */ = {
+		EC2757292B5131D40078C1AA /* Room */ = {
 			isa = PBXGroup;
 			children = (
 				EC2757272B51312B0078C1AA /* ChattingData.swift */,
@@ -87,7 +100,20 @@
 				EC27572D2B5132F30078C1AA /* ChatRoomTableViewCell.xib */,
 				EC2757302B5139770078C1AA /* ChatRoom.storyboard */,
 			);
-			path = Main;
+			path = Room;
+			sourceTree = "<group>";
+		};
+		EC2757322B529F5E0078C1AA /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				EC2757342B529F8C0078C1AA /* Chat.storyboard */,
+				EC2757362B52A06A0078C1AA /* ChatViewController.swift */,
+				EC2757382B52A0C30078C1AA /* OtherTableViewCell.swift */,
+				EC2757392B52A0C30078C1AA /* OtherTableViewCell.xib */,
+				EC27573C2B52A5C90078C1AA /* UserTableViewCell.swift */,
+				EC27573D2B52A5C90078C1AA /* UserTableViewCell.xib */,
+			);
+			path = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,8 +174,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC27573F2B52A5C90078C1AA /* UserTableViewCell.xib in Resources */,
+				EC2757352B529F8C0078C1AA /* Chat.storyboard in Resources */,
 				EC2757202B5130660078C1AA /* LaunchScreen.storyboard in Resources */,
 				EC2757312B5139770078C1AA /* ChatRoom.storyboard in Resources */,
+				EC27573B2B52A0C30078C1AA /* OtherTableViewCell.xib in Resources */,
 				EC27571D2B5130660078C1AA /* Assets.xcassets in Resources */,
 				EC27572F2B5132F30078C1AA /* ChatRoomTableViewCell.xib in Resources */,
 				EC27571B2B5130650078C1AA /* Main.storyboard in Resources */,
@@ -164,8 +193,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC2757182B5130650078C1AA /* ViewController.swift in Sources */,
+				EC27573E2B52A5C90078C1AA /* UserTableViewCell.swift in Sources */,
 				EC2757282B51312B0078C1AA /* ChattingData.swift in Sources */,
 				EC2757142B5130650078C1AA /* AppDelegate.swift in Sources */,
+				EC2757372B52A06A0078C1AA /* ChatViewController.swift in Sources */,
+				EC27573A2B52A0C30078C1AA /* OtherTableViewCell.swift in Sources */,
 				EC2757162B5130650078C1AA /* SceneDelegate.swift in Sources */,
 				EC27572E2B5132F30078C1AA /* ChatRoomTableViewCell.swift in Sources */,
 				EC27572B2B5132150078C1AA /* ChatRoomViewController.swift in Sources */,

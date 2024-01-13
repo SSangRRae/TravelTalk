@@ -5,6 +5,10 @@
 //  Created by SangRae Kim on 1/12/24.
 //
 
+protocol ConfigureTableView {
+    func configureTableView()
+}
+
 import UIKit
 
 class ChatRoomViewController: UIViewController {
@@ -19,7 +23,7 @@ class ChatRoomViewController: UIViewController {
     }
 }
 
-extension ChatRoomViewController {
+extension ChatRoomViewController: ConfigureTableView {
     func configureHeader() {
         navigationItem.title = "TRAVEL TALK"
         searchBar.placeholder = "친구 이름을 검색해보세요"
@@ -44,9 +48,15 @@ extension ChatRoomViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.configureCell(mockChatList[indexPath.row])
         
-        
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Chat", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ChatViewController") as! ChatViewController
+        
+        vc.contents = mockChatList[indexPath.row]
+        
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }

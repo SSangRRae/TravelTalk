@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol ConfigureCell {
+    func commonConfigureCell()
+}
+
 struct Date {
     var stringDate: String
     let df = DateFormatter()
@@ -31,10 +35,12 @@ class ChatRoomTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        commonDesignCell()
+        commonConfigureCell()
     }
-    
-    func commonDesignCell() {
+}
+
+extension ChatRoomTableViewCell: ConfigureCell {
+    func commonConfigureCell() {
         DispatchQueue.main.async {
             self.roomImageView.layer.cornerRadius = self.roomImageView.frame.width / 2
         }

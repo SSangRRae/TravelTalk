@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Chat View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ChatViewController" id="Y6W-OH-hqX" customClass="ChatViewController" customModule="TravelTalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ivg-A9-68M">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="YfC-Ak-izm">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Y41-zI-6Uy">
+                                            <rect key="frame" x="32" y="0.0" width="329" height="44"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRt-vd-kjt">
+                                            <rect key="frame" x="317" y="0.0" width="44" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="hRt-vd-kjt" secondAttribute="height" multiplier="1:1" id="5h3-MN-RoH"/>
+                                            </constraints>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain"/>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="hRt-vd-kjt" secondAttribute="bottom" id="9cc-Nb-zgp"/>
+                                        <constraint firstAttribute="trailing" secondItem="hRt-vd-kjt" secondAttribute="trailing" constant="32" id="Kr0-Cg-GRp"/>
+                                        <constraint firstItem="hRt-vd-kjt" firstAttribute="top" secondItem="YfC-Ak-izm" secondAttribute="top" id="PTa-C3-nXw"/>
+                                        <constraint firstItem="Y41-zI-6Uy" firstAttribute="top" secondItem="YfC-Ak-izm" secondAttribute="top" id="RNE-k7-rBs"/>
+                                        <constraint firstItem="Y41-zI-6Uy" firstAttribute="leading" secondItem="YfC-Ak-izm" secondAttribute="leading" constant="32" id="gTC-BQ-jcY"/>
+                                        <constraint firstAttribute="trailing" secondItem="Y41-zI-6Uy" secondAttribute="trailing" constant="32" id="gkz-eR-1DP"/>
+                                        <constraint firstAttribute="bottom" secondItem="Y41-zI-6Uy" secondAttribute="bottom" id="yMz-Vm-BCT"/>
+                                    </constraints>
+                                </view>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ivg-A9-68M" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="6tg-fL-lVM"/>
+                            <constraint firstItem="Ivg-A9-68M" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="7a4-Lx-ONQ"/>
+                            <constraint firstItem="Ivg-A9-68M" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="tDq-gU-Ri9"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ivg-A9-68M" secondAttribute="bottom" id="xcg-Ka-sHV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chatBubble" destination="Y41-zI-6Uy" id="qJO-Wf-acs"/>
+                        <outlet property="footerView" destination="YfC-Ak-izm" id="R07-ik-chu"/>
+                        <outlet property="sendButton" destination="hRt-vd-kjt" id="Fit-r1-0YY"/>
+                        <outlet property="tableView" destination="Ivg-A9-68M" id="dOa-b3-VU7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-208.3969465648855" y="20.422535211267608"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
